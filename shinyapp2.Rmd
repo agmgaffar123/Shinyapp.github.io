@@ -1,0 +1,48 @@
+---
+title: "Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch"
+author: "Irshad"
+date: "4/30/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+**Overview**
+
+This application was designed for Developing Data Products as part of the Coursera Data Science Speicalization Course.
+
+The first part of the assignment to create a Shiny application can be found here: https://agmgaffar.shinyapps.io/shinyappirshad/
+
+The second part of the assigment to prepare a reproducible pitch presentation about the application can be found here: https://github.com/agmgaffar123/Shinyapp.github.io
+
+This model is developed based on mtcars data set.The model will predict the hoursepower based on milage and bins.
+
+
+
+## Data abd Variables given
+
+- Input - Milage
+- Output - Horsepower
+- Data - Mtcars
+
+## Slide with R Output
+
+```{r cars, echo = TRUE,comment = ""}
+head(mtcars)
+```
+
+## Slide with Plot
+
+Model - model_lm <- lm(hp~mpg, data = mtcars)
+
+Summary
+
+```{r, comment = "", echo = TRUE, fig.align='center'}
+model_lm <- lm(hp~mpg, data = mtcars)
+summary(model_lm)
+```
+
